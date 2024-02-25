@@ -10,6 +10,7 @@ import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 import wildfires from "../../Assets/Projects/wildfires.jpeg"
 import fpo from "../../Assets/Projects/fpo.png"
+import AlgoPlus from "../../Assets/Projects/algoplus.png"
 import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
 import LanguageDetector from 'i18next-browser-languagedetector';
@@ -48,7 +49,15 @@ function Projects() {
               ghLink="https://github.com/spirosmaggioros/FPO"
             />
           </Col>
-
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={AlgoPlus}
+              isBlog={false}
+              title="AlgoPlus"
+              description="AlgoPlus is a C++17 library for complex data structures and algorithms"
+              ghLink="https://github.com/CSRT-NTUA/AlgoPlus"
+            />
+          </Col>
         </Row>
       </Container>
     </Container>
